@@ -1,6 +1,4 @@
-Here's the updated `README.md` with an alert section to remind users to have a local MongoDB server running:
 
-````markdown
 # Blog Platform
 
 This project consists of a frontend and a backend for a blog platform. Follow the steps below to set up and run the application.
