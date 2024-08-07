@@ -16,7 +16,6 @@ This project consists of a frontend and a backend for a blog platform. Follow th
    git clone <repository-url>
    cd <repository-directory>
    ```
-````
 
 2. **Install dependencies for the frontend**:
 
