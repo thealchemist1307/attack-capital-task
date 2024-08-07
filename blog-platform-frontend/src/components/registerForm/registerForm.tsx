@@ -1,6 +1,4 @@
 "use client";
-
-import { register } from "@/lib/action";
 import styles from "./registerForm.module.css";
 import { useFormState } from "react-dom";
 import { useEffect } from "react";
@@ -10,7 +8,7 @@ interface RegisterFormProps {
   register: any;
 }
 const RegisterForm: React.FC<RegisterFormProps> = ({register}) => {
-  const [state, formAction] = useFormState(register, undefined);
+  const [state, formAction] = useFormState<any>(register, undefined);
 
   const router = useRouter();
 

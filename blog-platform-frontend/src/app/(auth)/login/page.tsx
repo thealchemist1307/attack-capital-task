@@ -14,7 +14,6 @@ const LoginPage = () => {
     return await axios
       .post(apiPoint.base + "/api/login", { email: email, password: password })
       .then(async (res) => {
-        console.log(JSON.stringify(res.data));
         await localStorage.setItem("token", String(res.data.token));
         await localStorage.setItem("authorId", String(res.data.authorId));
         Cookies.set('loggedin', "true")

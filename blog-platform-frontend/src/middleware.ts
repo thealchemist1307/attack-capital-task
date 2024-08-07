@@ -5,7 +5,6 @@ import type { NextRequest } from "next/server";
 export async function middleware(request: NextRequest) {
   let session: any = request.cookies.get("loggedin")?.value;
   if (request.nextUrl.pathname.startsWith("/dashboard")) {
-    console.log("middle ware", session);
     if (session == "true") {
       return NextResponse.rewrite(new URL("/dashboard", request.url));
     }

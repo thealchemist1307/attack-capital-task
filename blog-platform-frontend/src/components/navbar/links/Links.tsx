@@ -14,7 +14,7 @@ const links = [
 ];
 
 interface LinksProps {
-  session: String|null;
+  session: String|null|undefined;
 }
 const Links: React.FC<LinksProps> = ({ session }) => {
   const router=useRouter()
@@ -27,7 +27,7 @@ const Links: React.FC<LinksProps> = ({ session }) => {
    router.refresh()
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.container} suppressHydrationWarning >
       <div className={styles.links}>
         {links.map((link) => (
           <NavLink item={link} key={link.title} />

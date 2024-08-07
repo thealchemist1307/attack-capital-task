@@ -38,7 +38,10 @@ const Dashboard = () => {
       .then(async (res) => {
         console.log(JSON.stringify(res.data));
         setModal(false)
-        setTimeout(()=>router.refresh(),1000)
+        fetch(apiPoint.base+'/api/posts?author='+authorId,)
+              .then(async (res) => { const posts: Post[] =await  res.json()
+                setPosts(posts)
+              })
 
       })
       .catch((err) => {
@@ -63,7 +66,7 @@ const Dashboard = () => {
         <div className='displayText'>No Data</div>
         :
         posts.map((post:any,index:Number) => (
-          <PostCard key={index} post={post}/>
+          <PostCard key={null} post={post}/>
         ))}
       </ul>
       </div>

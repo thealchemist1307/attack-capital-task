@@ -9,7 +9,7 @@ interface LoginFormProps {
 }
 const LoginForm: React.FC<LoginFormProps> = ({login}) => {
 
-  const [state, formAction] = useFormState(login, undefined);
+  const [state, formAction] = useFormState<any>(login, undefined);
 
   return (
     <form className={styles.form} action={formAction}>

@@ -13,7 +13,6 @@ const RegisterPage = () => {
     return await axios
       .post(apiPoint.base + "/api/signup", { email: email, password: password })
       .then(async (res) => {
-        console.log(JSON.stringify(res.data));
         router.replace("/login")
         router.refresh()
 
