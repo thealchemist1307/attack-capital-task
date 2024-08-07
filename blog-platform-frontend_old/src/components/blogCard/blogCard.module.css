@@ -1,0 +1,53 @@
+.container{
+  width: 50%;
+  padding: 1%;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  border: solid #000;
+  border-width: 1 1px;
+  padding: 5%;
+  border-radius: 5%;
+  box-shadow:10px ;
+}
+.top{
+  display: flex;
+}
+
+.imgContainer{
+  width: 90%;
+  height: 400px;
+  position: relative;
+}
+
+.img{
+  object-fit: cover;
+}
+.alt{
+  object-fit:contain;
+}
+.date{
+  font-size: 12px;
+  transform: rotate(270deg);
+  margin: auto;
+}
+
+.title{
+  width: 90%;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.desc{
+  width: 90%;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: gray;
+}
+
+.link{
+  text-decoration: underline;
+}
