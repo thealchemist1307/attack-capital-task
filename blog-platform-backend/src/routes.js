@@ -74,11 +74,4 @@ router.get('/posts', async (req, res) => {
   res.send(posts);
 });
 
-// Get posts by author
-router.get('/posts', async (req, res) => {
-  const { author } = req.query;
-  const posts = await Post.find({ authorId: author });
-  res.send(posts);
-});
-
 module.exports = router;
