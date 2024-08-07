@@ -13,8 +13,8 @@ This project consists of a frontend and a backend for a blog platform. Follow th
 1. **Clone the repository**:
 
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/thealchemist1307/attack-capital-task.git
+   cd attack-capital-task
    ```
 
 2. **Install dependencies for the frontend**:
