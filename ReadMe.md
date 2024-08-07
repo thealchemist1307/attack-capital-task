@@ -67,12 +67,3 @@ This project consists of a frontend and a backend for a blog platform. Follow th
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-### Changes Made:
-- Added a **"Alert"** section to ensure that users are aware of the need to have a local MongoDB server running on `localhost:27017`.
-- Updated the installation instructions to mention the use of batch scripts for dependency installation.
-
-This should help users set up and run the application correctly by ensuring all prerequisites are met.
-```
